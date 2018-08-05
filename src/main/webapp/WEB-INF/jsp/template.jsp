@@ -14,88 +14,94 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="main.jsp">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="main.jsp">Main <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="catalog.jsp">Catalog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="product.jsp">Product</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="cart.jsp">Cart</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="order.jsp">Order</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <% if (request.getAttribute("url") != null) {
-        String s = (String) request.getAttribute("url");
-        if (s != null) {
-            out.flush();
-            request.getRequestDispatcher(s).include(request, response);
-        }
-    }
-    %>
-
-    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
-        <div class="container">
-            <div class="row row-30">
-                <div class="col-md-4 col-xl-5">
-                    <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
-                        <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
-                        <!-- Rights-->
-                        <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h5>Contacts</h5>
-                    <dl class="contact-list">
-                        <dt>Address:</dt>
-                        <dd>798 South Park Avenue, Jaipur, Raj</dd>
-                    </dl>
-                    <dl class="contact-list">
-                        <dt>email:</dt>
-                        <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
-                    </dl>
-                    <dl class="contact-list">
-                        <dt>phones:</dt>
-                        <dd><a href="tel:#">+7 911 900 00 00</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
-                        </dd>
-                    </dl>
-                </div>
-                <div class="col-md-4 col-xl-3">
-                    <h5>Links</h5>
-                    <ul class="nav-list">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Pricing</a></li>
+    <div class="container-main">
+        <div class="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="main.jsp"><%=request.getAttribute("title") %></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="main">Main<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalog">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="order">Order</a>
+                        </li>
                     </ul>
                 </div>
+            </nav>
+
+            <% if (request.getAttribute("url") != null) {
+                String s = (String) request.getAttribute("url");
+                if (s != null) {
+                    out.flush();
+                    request.getRequestDispatcher(s).include(request, response);
+                }
+            }
+            %>
+        </div>
+        <footer class="section footer-classic context-dark bg-image" style="background: #f8f9fa;">
+            <div class="container">
+                <div class="row row-30">
+                    <div class="col-md-4 col-xl-5">
+                        <div class="pr-xl-4">
+                            <!-- Rights-->
+                            <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>. </span><span>All Rights Reserved.</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contacts</h5>
+                        <dl class="contact-list">
+                            <dt>Address:</dt>
+                            <dd>Saint-Petersburg</dd>
+                        </dl>
+                        <dl class="contact-list">
+                            <dt>email:</dt>
+                            <dd><a href="mailto:#">serg.mihalew@yandex.ru</a></dd>
+                        </dl>
+                        <dl class="contact-list">
+                            <dt>phones:</dt>
+                            <dd><a href="tel:#">+7 911 900 00 00</a> <span>or</span> <a href="tel:#">+7 812 000 00 00</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4 col-xl-3">
+                        <h5>Links</h5>
+                        <ul class="nav-list">
+                            <li><a href="main">Main</a></li>
+                            <li><a href="catalog">Catalog</a></li>
+                            <li><a href="product">Product</a></li>
+                            <li><a href="cart">Cart</a></li>
+                            <li><a href="order">Order</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row no-gutters social-container">
-            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
-            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>Instagram</span></a></div>
-            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>Twitter</span></a></div>
-            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>Google</span></a></div>
-        </div>
-    </footer>
+            <div class="row no-gutters social-container">
+                <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+                <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>Instagram</span></a></div>
+                <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>Twitter</span></a></div>
+                <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>Google</span></a></div>
+            </div>
+        </footer>
+    </div>
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

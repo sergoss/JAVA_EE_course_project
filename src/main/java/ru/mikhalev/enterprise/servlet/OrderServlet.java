@@ -10,10 +10,18 @@ import java.io.IOException;
 @WebServlet(name = "OrderServlet", urlPatterns = {"/order"})
 public class OrderServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        processRequest(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        processRequest(request, response);
+    }
 
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("title", "Order");
+        request.setAttribute("url", "order.jsp");
+
+        request.getRequestDispatcher(getServletContext().getInitParameter("path_jsp")
+                + getServletContext().getInitParameter("template")).forward(request, response);
     }
 }
