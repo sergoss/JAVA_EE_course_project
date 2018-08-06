@@ -15,9 +15,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-main">
+    <div class="container">
         <div class="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="main.jsp"><%=request.getAttribute("title") %></a>
@@ -54,55 +55,8 @@
             }
             %>
         </div>
-        <footer class="section footer-classic context-dark bg-image" style="background: #f8f9fa;">
-            <div class="container">
-                <div class="row row-30">
-                    <div class="col-md-4 col-xl-5">
-                        <div class="pr-xl-4">
-                            <!-- Rights-->
-                            <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>. </span><span>All Rights Reserved.</span></p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Contacts</h5>
-                        <dl class="contact-list">
-                            <dt>Address:</dt>
-                            <dd>Saint-Petersburg</dd>
-                        </dl>
-                        <dl class="contact-list">
-                            <dt>email:</dt>
-                            <dd><a href="mailto:#">serg.mihalew@yandex.ru</a></dd>
-                        </dl>
-                        <dl class="contact-list">
-                            <dt>phones:</dt>
-                            <dd><a href="tel:#">+7 911 900 00 00</a> <span>or</span> <a href="tel:#">+7 812 000 00 00</a>
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="col-md-4 col-xl-3">
-                        <h5>Links</h5>
-                        <ul class="nav-list">
-                            <li><a href="main">Main</a></li>
-                            <li><a href="catalog">Catalog</a></li>
-                            <li><a href="product">Product</a></li>
-                            <li><a href="cart">Cart</a></li>
-                            <li><a href="order">Order</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row no-gutters social-container">
-                <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
-                <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>Instagram</span></a></div>
-                <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>Twitter</span></a></div>
-                <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>Google</span></a></div>
-            </div>
-        </footer>
+        <footer>&copy; All rights reserved 2018</footer>
     </div>
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
