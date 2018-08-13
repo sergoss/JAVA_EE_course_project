@@ -4,9 +4,9 @@ import org.jetbrains.annotations.Nullable;
 
 public interface ProductContract {
     @Nullable
-    String getID();
+    String getId();
 
-    void setID(@Nullable String id);
+    void setId(@Nullable String id);
 
     @Nullable
     String getName();
@@ -29,7 +29,7 @@ public interface ProductContract {
     void setFullDescription(@Nullable String fullDescription);
 // тоже самое что и для системных требований
     @Nullable
-    String systemRequirements();
+    String getSystemRequirements();
 
     void setSystemRequirements(@Nullable String systemRequirements);
 

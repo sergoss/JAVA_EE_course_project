@@ -13,8 +13,24 @@
 
     <navigation-rule>
         <navigation-case>
-            <from-outcome>project-list</from-outcome>
-            <to-view-id>/project-list.xhtml</to-view-id>
+            <from-outcome>category</from-outcome>
+            <to-view-id>/category.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>order-confirmation</from-outcome>
+            <to-view-id>/order-confirmation.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>order-list</from-outcome>
+            <to-view-id>/order-list.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>product-edit</from-outcome>
+            <to-view-id>/product-edit.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>product-list</from-outcome>
+            <to-view-id>/product-list.xhtml</to-view-id>
         </navigation-case>
 
     </navigation-rule>

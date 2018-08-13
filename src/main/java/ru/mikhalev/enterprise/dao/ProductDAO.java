@@ -21,7 +21,9 @@ public class ProductDAO {
 
     @PostConstruct
     private void init() {
-
+        merge(new ProductEntity("Fallout 4: Game of the Year Edition"));
+        merge(new ProductEntity("The Elder Scrolls V: Skyrim Special Edition"));
+        merge(new ProductEntity("The Elder Scrolls® Online"));
     }
 
     @Nullable

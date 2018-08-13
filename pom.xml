@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>ru.mikhalev.enterprise</groupId>
-  <artifactId>course-project-enterprise</artifactId>
+  <artifactId>home-work-2</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>home-work</name>
+  <name>home-work-2</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -48,15 +48,15 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>jstl</artifactId>
-      <version>1.2</version>
-    </dependency>
-    <dependency>
       <groupId>org.ocpsoft.rewrite</groupId>
       <artifactId>rewrite-config-prettyfaces</artifactId>
       <version>RELEASE</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -75,7 +75,7 @@
   </developers>
 
   <build>
-    <finalName>course-project-enterprise</finalName>
+    <finalName>home-work-2</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
